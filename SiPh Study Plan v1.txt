@@ -1,0 +1,114 @@
+Silicon Photonics Learning Agenda – Simplified version
+Part I: Foundations
+1.1. 	Module 1: Why SiPh?  
+1.2. 	Module 2: Basic Optics & Wave Theory
+1.3. 	Module 3: Waveguide Platforms & Materials
+Part II: Passive Components
+2.1. 	Module 4: Basic Passive Devices  
+2.2. 	Module 5: Polarization Controller
+2.3. 	Module 6: Advanced WDM Components & MUX/DEMUX (Optional)
+Part III: Active Components & System Building Blocks
+3.1. 	Module 7: Modulators – Physics & Variants
+3.2. 	Module 8: Optical Switches (nonlinear/thermal optics) & routing
+3.3. 	Module 9: Photodetectors & Lasers (Optional)
+Part IV: System Integration & Fiber Interface
+4.1. 	Module 10: Fiber‑to‑Chip Coupling
+4.2. 	Module 11: Electronic–Photonic Co‑Design
+Part V: Advanced Topics & Applications
+5.1. 	Module 12: Nonlinear & Thermal Optics (Optional)
+
+ 
+Silicon Photonics Learning Agenda – Comprehensive version
+
+Part I: Foundations
+1.1. Module 1: Why Silicon Photonics? Motivation and overview
+	What is silicon phonics? Key components of Photonics Integrated Circuits (PICs).
+	Comparison with electronics: speed, power, bandwidth, CMOS compatibility
+	Key Applications: AI interconnects, Telecommunications, Light Detection and Ranging (LiDAR), Sensing, 
+	Current market players and industry trends
+
+1.2. Module 2: Basic Optics & Wave Theory
+	Electromagnetic waves, refractive index, dispersion
+	Reflection, refraction, total internal reflection (TIR)
+	Polarization (TE/TM) – important for devices
+	O‑band vs. C‑band: wavelength windows, attenuation (signal loss), chromatic dispersion
+
+1.3. Module 3: Waveguide Platforms & Materials – The Foundation of PICs
+1.3.1. Waveguide properties
+	What is a waveguide? Categories of waveguides (slab, strip, rib, ridge, slot and diffused waveguide)
+	Optical waveguide modes: single‑mode vs. multi‑mode
+	Confinement factor and effective index
+	Waveguide loss mechanism: scattering, absorption, bending loss
+	Waveguide primary loss metrics: Insertion loss (IL), propagation loss (dB/cm or dB/mm), coupling loss, return loss 
+	Waveguide loss measurement methods: cutback method, direct Insertion Loss method, Fabry-Perot (FP) method, all-pass ring resonator method
+
+1.3.2. Waveguide materials
+	Silicon‑on‑insulator (SOI): high index, low loss, CMOS compatible
+	Silicon nitride (SiNx): low loss, wide transparency, high optical power handling
+	Lithium niobate on insulator (LNOI): ferroelectric, high damage threshold, electro‑optic modulators
+	Other materials: Heterogeneous integration (III‑V bonding, micro‑transfer printing µTP)
+	Material selection trade‑offs: performance vs. manufacturability
+
+ 
+Part II: Passive Components
+2.1. Module 4: Basic Passive Devices – Couplers, Interferometer & Filters
+	Directional couplers: coupled mode equations
+	Mach‑Zehnder interferometer (MZI): principle, splitting ratio, phase shift, combining (cover more in Module 7)
+	Y‑branches splitter, multimode interference couplers (MMIs)
+	Ring resonators: Microring, Racetrack resonator, FSR, Q‑factor, critical coupling, filter/switch application (cover more in Module 7)
+	Comparison: MZI vs. ring for filtering, switching, modulation
+
+2.2. Module 5: Polarization Controller
+	Why polarization control matters in PICs?
+	Polarization splitter‑rotator (PSR)
+	Polarization‑diverse designs (e.g., Dual-Polarization Waveguide Receiver)
+	Manufacturing sensitivity: extinction ratio vs. fabrication tolerances
+
+2.3. Module 6: Advanced WDM Components (Optional)
+	Arrayed waveguide grating (AWG): design, crosstalk, channel spacing
+	Waveguide echelle grating (WEG), Waveguide Interleaver
+	Ring‑based WDM
+	MUX/DEMUX using cascaded MZIs or cascaded rings
+ 
+Part III: Active Components & System Building Blocks
+3.1. Module 7: Modulators – Physics & Variants
+	Plasma dispersion effect in Si (carrier depletion vs. injection)
+	MZI modulator (with thermal switch/phase shifter): push‑pull configuration
+	Ring modulator: trade‑offs
+	Modulator metrics: extinction ratio, VπL, bandwidth (GHz), optical loss, speed
+	Alternative materials: LiNbO3 (LNOI) modulators, Si‑organic hybrid (SOH)
+
+3.2. Module 8: Optical Switches & Routing
+	Thermo‑optic switches (Δn/ΔT)
+	Electro‑optic switches (carrier-depletion effect/nonlinear effect)
+	MEMS switches, optical switch matrix
+	Switch metrics: speed, efficiency, insertion loss
+
+3.3. Module 9: Photodetectors & Lasers (Optional)
+	Ge photodetector: Why Ge-on-Si? (absorption at O/C band, responsivity, speed), Ge/Si Avalanche Photodiodes (APDs)
+	VCSELs (off‑chip for short reach) vs. edge‑emitters <Fabry-Perot (FP) lasers, Distributed Feedback (DFB) lasers, and Electro-absorption Modulated Lasers (EMLs)>
+	Semiconductor optical amplifiers (SOAs): on‑chip gain, signal loss compensation
+
+ 
+Part IV: System Integration & Fiber Interface
+4.1. Module 10: Fiber‑to‑Chip Coupling
+	Grating couplers (vertical): polarization‑dependent, narrowband
+	Edge couplers & spot‑size converters (SSC): polarization-insensitive, low loss, wideband
+
+4.2. Module 11: Electronic–Photonic Co‑Design
+	Electronic Photonic Integrated Circuits (EPICs): CMOS-photonic integration
+	Design for manufacturing: electrical‑optical co‑simulation
+
+Part V: Advanced Topics & Applications
+5.1. Module 12: Nonlinear & Thermal Optics (Optional)
+5.1.1. Thermal Optics
+	Thermo‑optic effect: heaters, tuners, athermal designs
+	Thermal management: crosstalk, heat sinking
+5.1.2. Nonlinear Optics
+	Nonlinear effects in Si/SiNx: Kerr, two‑photon absorption, four‑wave mixing
+	Nonlinear effects in LNOI: Second-Harmonic Generation (SHG), Sum/Difference Frequency Generation (SFG/DFG), Optical Parametric Oscillation/Amplification (OPO/OPA)
+	Quasi-Phase Matching (QPM): periodically poled lithium niobate (PPLN), poling mechanism
+
+
+
+

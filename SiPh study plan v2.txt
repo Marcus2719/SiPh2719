@@ -1,0 +1,62 @@
+Silicon Photonics Learning Agenda – Comprehensive version
+
+One day is equivalent to a 1.5-hour unit.
+Day 1: Why Silicon Photonics? Motivation and overview
+	What is silicon phonics? Key components of Photonics Integrated Circuits (PICs).
+	Comparison with electronics: speed, power, bandwidth, CMOS compatibility
+	Key Applications: AI interconnects, Telecommunications, Light Detection and Ranging (LiDAR), Sensing, 
+	Current market players and industry trends
+
+Day 2, 3: Basic Optics & Wave Theory
+	Electromagnetic waves, refractive index, dispersion
+	Reflection, refraction, total internal reflection (TIR)
+	Polarization (TE/TM) – important for devices
+	O‑band vs. C‑band: wavelength windows, attenuation (signal loss), chromatic dispersion
+
+Day 4, 5, 6&7: Waveguide Platforms & Materials – The Foundation of PICs
+Waveguide properties
+	What is a waveguide? Categories of waveguides (slab, strip, rib, ridge, slot and diffused waveguide)
+	Optical waveguide modes: single‑mode vs. multi‑mode
+	Confinement factor and effective index
+	Waveguide loss mechanism: scattering, absorption, bending loss
+	Waveguide primary loss metrics: Insertion loss (IL), propagation loss (dB/cm or dB/mm), coupling loss, return loss 
+	Waveguide loss measurement methods: cutback method, direct Insertion Loss method, Fabry-Perot (FP) method, all-pass ring resonator method
+
+Waveguide materials
+	Silicon‑on‑insulator (SOI): high index, low loss, CMOS compatible
+	Silicon nitride (SiNx): low loss, wide transparency, high optical power handling
+	Lithium niobate on insulator (LNOI): ferroelectric, high damage threshold, electro‑optic modulators
+	Other materials: Heterogeneous integration (III‑V bonding, micro‑transfer printing µTP)
+	Material selection trade‑offs: performance vs. manufacturability
+
+Day 8: 
+	Fiber‑to‑Chip Coupling
+	Grating couplers (vertical): polarization‑dependent, narrowband
+	Edge couplers & spot‑size converters (SSC): polarization-insensitive, low loss, wideband
+
+
+ 
+Part II: Passive, Active Components & System Building Blocks
+Day 9: 
+	Plasma dispersion effect in Si (carrier depletion vs. injection)
+Day 10: 
+	Electro absorption vs. Electro refraction
+Day 11: 
+	Directional couplers: coupled mode equations
+Day 12: 
+	Y‑branches splitter, multimode interference couplers (MMIs)
+Day 13: 
+	Mach‑Zehnder interferometer (MZI): principle, splitting ratio, phase shift, combining 
+	MZI modulator (with thermal switch/phase shifter): push‑pull configuration
+Day 14: 
+	Ring resonators: Microring, Racetrack resonator, FSR, Q‑factor, critical coupling, filter/switch application, trade-offs 
+	Comparison: MZI vs. ring for filtering, switching, modulation
+	Modulator metrics: extinction ratio, VπL, bandwidth (GHz), optical loss, speed
+Day 15, 16: 
+	High speed modulator
+Day 17: 
+	Ge photodetector: Why Ge-on-Si? (absorption at O/C band, responsivity, speed), Ge/Si Avalanche Photodiodes (APDs)
+Day 18:
+	Other structure: Waveguide Crossings, adiabatic coupler, 
+
+
