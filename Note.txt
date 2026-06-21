@@ -1,9 +1,9 @@
 Read this: Taking silicon photonics modulators to a higher performance level 
 
 
-Study on mechanism of sidewall roughness scattering in slot optical waveguides by FDTD simulation
-DOI 10.1088/2040-8986/ac6525
-	Analysis and design of simple low-loss wide-angle waveguide bends
+xxx Study on mechanism of sidewall roughness scattering in slot optical waveguides by FDTD simulation
+xxxDOI 10.1088/2040-8986/ac6525
+xxxAnalysis and design of simple low-loss wide-angle waveguide bends
 	Waveguide Mach-Zehnder biosensor with laser diode pumped integrated single-mode silicon nitride organic hybrid solid-state laser
 	Nano-photonics for Advanced Networks (book)
 xxxInterference effect in scattering loss of high-index-contrast planar waveguides caused by boundary reflections
