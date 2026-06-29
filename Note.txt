@@ -3,10 +3,7 @@ Read this: Taking silicon photonics modulators to a higher performance level
 
 Note this:
 Book: Semiconductors and Semimetals
-xxx Study on mechanism of sidewall roughness scattering in slot optical waveguides by FDTD simulation
-xxxDOI 10.1088/2040-8986/ac6525
-	Waveguide Mach-Zehnder biosensor with laser diode pumped integrated single-mode silicon nitride organic hybrid solid-state laser
-	Nano-photonics for Advanced Networks (book)
+
 	Waveguide Mach-Zehnder biosensor with laser diode pumped integrated single-mode silicon nitride organic hybrid solid-state laser
 	Nano-photonics for Advanced Networks (book)
 	Semi-embedded slot waveguide electro-optic modulator
@@ -17,18 +14,23 @@ xxxDOI 10.1088/2040-8986/ac6525
 	https://www.nature.com/articles/s41566-025-01832-9
 	https://www.nature.com/articles/s41566-025-01831-w
 	Nonlinear optical properties of silicon waveguides
+	Emerging technologies in Si active photonics
+	https://link.springer.com/article/10.1007/s10854-026-17040-2
+	Highly efficient single-layer graphene electro-absorption modulator
+	Interference effect in scattering loss of high-index-contrast planar waveguides caused by boundary reflections (2008)
+	Correlation of Scattering Loss, Sidewall Roughness and Waveguide Width in Silicon-on-Insulator (SOI) Ridge Waveguides (2009)
+	Measurements and Modeling of Atomic-Scale Sidewall Roughness and Losses in Integrated Photonic Devices (2022)
+	The Long-Wavelength Edge of Photographic Sensitivity and of the Electronic Absorption of Solids (1953)
+	High modulation efficiency sinusoidal vertical PN junction phase shifter in silicon-on-insulator (2024)
+	Measurement of the effective refractive index of silicon-on-insulator waveguide using Mach–Zehnder interferometers (2024)
+	https://www.nature.com/articles/s44287-025-00223-0 (2026) integrated SiPh with CMOS
+	https://www.nature.com/articles/s41586-024-07078-9 (2024) LN with SiPh
+
+This has problem:　[25] Light propagation in free-form dielectric waveguides a modal perspective.pdf
 
 
 
 
-
-
-
-Home note: 
-Integrating silicon photonics with complementary metal–oxide–semiconductor technologies
-https://www.nature.com/articles/s44287-025-00223-0
-
-https://www.nature.com/articles/s41586-024-07078-9
 
 
 
