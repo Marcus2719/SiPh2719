@@ -2,12 +2,10 @@ Read this: Taking silicon photonics modulators to a higher performance level
 
 
 Note this:
-Book: Semiconductors and Semimetals
-
 	Waveguide Mach-Zehnder biosensor with laser diode pumped integrated single-mode silicon nitride organic hybrid solid-state laser
 	Nano-photonics for Advanced Networks (book)
 	Semi-embedded slot waveguide electro-optic modulator
-	Modern Semiconductor Devices for Integrated Circuits (Chenming Hu)
+xxx Modern Semiconductor Devices for Integrated Circuits (Chenming Hu)
 	Programmable photonic circuits
 	Silicon microring resonators
 	Breaking efficiency-bandwidth limits of integrated silicon modulator using rib waveguide slab region doping design
@@ -20,7 +18,7 @@ Book: Semiconductors and Semimetals
 	Interference effect in scattering loss of high-index-contrast planar waveguides caused by boundary reflections (2008)
 	Correlation of Scattering Loss, Sidewall Roughness and Waveguide Width in Silicon-on-Insulator (SOI) Ridge Waveguides (2009)
 	Measurements and Modeling of Atomic-Scale Sidewall Roughness and Losses in Integrated Photonic Devices (2022)
-	The Long-Wavelength Edge of Photographic Sensitivity and of the Electronic Absorption of Solids (1953)
+xxx The Long-Wavelength Edge of Photographic Sensitivity and of the Electronic Absorption of Solids (1953)
 	High modulation efficiency sinusoidal vertical PN junction phase shifter in silicon-on-insulator (2024)
 	Measurement of the effective refractive index of silicon-on-insulator waveguide using Mach–Zehnder interferometers (2024)
 	https://www.nature.com/articles/s44287-025-00223-0 (2026) integrated SiPh with CMOS
