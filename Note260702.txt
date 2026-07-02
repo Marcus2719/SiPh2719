@@ -1,0 +1,43 @@
+Read this: [17] Design of a carrier-depletion Mach-Zehnder modulator in 250 nm SOI technology
+
+
+Note this:
+	Waveguide Mach-Zehnder biosensor with laser diode pumped integrated single-mode silicon nitride organic hybrid solid-state laser
+	Nano-photonics for Advanced Networks (book)
+	Semi-embedded slot waveguide electro-optic modulator
+	Programmable photonic circuits
+	Silicon microring resonators
+	Breaking efficiency-bandwidth limits of integrated silicon modulator using rib waveguide slab region doping design
+	https://www.nature.com/articles/s41566-025-01832-9
+	https://www.nature.com/articles/s41566-025-01831-w
+	Nonlinear optical properties of silicon waveguides
+	Emerging technologies in Si active photonics
+	https://link.springer.com/article/10.1007/s10854-026-17040-2
+	Highly efficient single-layer graphene electro-absorption modulator
+	Interference effect in scattering loss of high-index-contrast planar waveguides caused by boundary reflections (2008)
+	Correlation of Scattering Loss, Sidewall Roughness and Waveguide Width in Silicon-on-Insulator (SOI) Ridge Waveguides (2009)
+	Measurements and Modeling of Atomic-Scale Sidewall Roughness and Losses in Integrated Photonic Devices (2022)
+	High modulation efficiency sinusoidal vertical PN junction phase shifter in silicon-on-insulator (2024)
+	Measurement of the effective refractive index of silicon-on-insulator waveguide using Mach–Zehnder interferometers (2024)
+	https://www.nature.com/articles/s44287-025-00223-0 (2026) integrated SiPh with CMOS
+	https://www.nature.com/articles/s41586-024-07078-9 (2024) LN with SiPh
+	Single-mode condition for a rib waveguide on the SOI platform: a revisit with new perspective (2026)
+	Conditions for Single-Mode and Birefringence-Free Ultrasmall SOI Rib Waveguides at 1310 nm (2013)
+	A unified approach for radiative losses and backscattering in optical waveguides (2014)
+	Plasma etching: Yesterday, today, and tomorrow (2013)
+	Scattering loss in silicon-on-insulator rib waveguides fabricated by inductively coupled plasma reactive ion etching (2004)
+	Silicon-on-insulator optical rib waveguides: loss, mode characteristics, bends and y-junctions (1994)
+	Non-destructively measuring loss and gain in photonic chips (2026)
+	Modified uni-travelling-carrier photodiodes with 206 GHz bandwidth and 0.81 A W−1 external responsivity (2025)
+	Avalanche photodiode with ultrahigh gain–bandwidth product of 1,033 GHz (2024)
+	Enhancement of responsivity and speed in waveguide Ge/Si avalanche photodiode with separate vertical Ge absorption, lateral Si charge and multiplication configuration (2019)
+	Silicon nitride photonic integration for visible light applications (2018)
+	Integrated optic microring resonator for various sensing applications: design and analysis (2024)
+
+
+
+
+
+
+
+
