@@ -2,6 +2,50 @@ Read this: [17] Design of a carrier-depletion Mach-Zehnder modulator in 250 nm S
 [20] Scaling capacity of fiber-optic transmission systems via silicon photonics
 [26] This is a report 先進封裝產業趨勢 (https://www.phys.nchu.edu.tw/upload/download_files/7edf3a61c42650743c5e53072f5e7e05.pdf)
 
+Intel’s 400G and 800G silicon photonics transceivers (such as their 400G DR4 and 800G FR4 OSFP modules) use pure Germanium (Ge) photodetectors (PD) built directly on a Silicon (Si) substrate. [1, 2, 3, 4, 5, 6]
+The Technology Behind the Detectors
+•	Material Composition: Intel’s silicon photonics platform relies on epitaxial growth of pure Germanium directly on silicon wafers. [1, 2]
+•	Why Pure Ge? Germanium is uniquely suited for absorbing both the 1310 nm and 1550 nm light wavelengths used in modern data center optical transceivers. Pure Germanium offers high responsivity and the necessary bandwidth to support 100G per-lane data rates (PAM4) required for 400G and 800G architectures. [1, 2, 3, 4, 5]
+•	Integration: These Ge PDs are integrated on the same Photonic Integrated Circuit (PIC) alongside Intel's hybrid silicon lasers and modulators. [1]
+
+I don’t have any transmitter or receiver PIC layouts available right now. 
+If you can tell me the transceiver requirements I can try to search for relevant circuits or references. 
+Please specify the modulation (NRZ‑OOK, PAM‑4, QPSK, QAM, …), the application (5G, LiDAR, telecom, datacom, …), the device structure (MZM, MRM, EAM, …), 
+and the target data rate (e.g., 200 Gbps, 400 Gbps). Any additional constraints (process node, footprint, power, test setup) would also help.
+
+
+**Comparison: Ge PD vs. GeSi PD (SiGe Photodetectors)**
+Ge PDs refer to photodetectors based on pure or near-pure germanium layers, typically grown on silicon. GeSi PDs refer to photodetectors using silicon-germanium alloys (Si₁₋ₓGeₓ), where the Ge fraction x is usually 0.3–0.9 depending on design. Both are used in silicon photonics for near-IR detection (especially 1310–1550 nm), but differ in material properties and integration.
+### Bandgap- **Ge PD**: Indirect bandgap ~0.66 eV at room temperature (direct transition ~0.80–0.85 eV). Strong absorption edge near 1550–1600 nm.- **GeSi PD**: Bandgap tunable with Ge fraction x. Approximate relation: E_g ≈ 1.12 – 0.41x – 0.008x(1–x) eV (simplified). For x=0.5, E_g ~0.85–0.9 eV; for x=0.8–1.0, approaches Ge values. Allows bandgap engineering to match specific wavelengths or reduce absorption loss in waveguides.
+**Key difference**: Ge has a fixed, lower bandgap; GeSi enables wavelength-selective tuning but generally higher bandgap at lower x.
+### Absorption- **Ge PD**: Higher absorption coefficient (α ≈ 5000–10 000 cm⁻¹ at 1550 nm). Efficient light absorption in thin layers.- **GeSi PD**: Absorption coefficient lower than pure Ge and depends on x and strain. For x=0.5–0.7, α is typically 2000–6000 cm⁻¹ at 1550 nm. Strain (tensile or compressive) can shift the absorption edge by 20–50 nm.
+**Trade-off**: Ge absorbs more strongly per unit thickness; GeSi requires thicker layers or higher x for comparable absorption but offers better control over cutoff wavelength.
+### Responsivity- **Ge PD**: Typically 0.8–1.2 A/W at 1550 nm (external responsivity) with good quantum efficiency (>70–90 % in optimized devices). Can exceed 1 A/W with avalanche or waveguide coupling.- **GeSi PD**: Usually 0.6–1.0 A/W at same wavelength, lower when x < 0.7 due to reduced absorption. Responsivity improves with higher Ge content but risks more defects.
+Responsivity scales with absorption length; Ge PDs generally achieve higher values with thinner active regions.
+### Thickness- **Ge PD**: Active layer 0.5–2 µm common. ~1 µm often sufficient for >80 % absorption at 1550 nm in vertical or waveguide geometries.- **GeSi PD**: Often 1–3 µm or more for equivalent absorption when x is moderate. Thinner possible with high-x or strained designs, but defect density rises.
+Thicker GeSi layers increase transit time but can reduce surface recombination.
+### Speed and Bandwidth- **Ge PD**: High-speed performance. 3 dB bandwidth 20–100 GHz reported (transit-time limited for thick layers; RC-limited for small area). Carrier transit time ~ few ps for 1 µm thickness.- **GeSi PD**: Comparable or slightly lower bandwidth (15–70 GHz typical). Tunable via alloy scattering and strain, but alloy disorder can slightly increase recombination. Often optimized for 25–50 GHz in commercial SiPh.
+Both limited by similar mechanisms (drift velocity ~10⁷ cm/s). Ge PDs can reach higher peak bandwidths; GeSi may offer better consistency across temperature due to tunable bandgap.
+### Epitaxy Technique- **Ge PD**: Grown on Si via reduced-pressure chemical vapor deposition (RPCVD) or ultra-high vacuum CVD. Common methods: two-step growth (low-T seed + high-T bulk) or graded SiGe buffers (ramp x from 0 to 1 over 1–5 µm) to relax 4.2 % lattice mismatch. Threading dislocation density (TDD) target <10⁶–10⁷ cm⁻².- **GeSi PD**: Direct growth of Si₁₋ₓGeₓ on Si. Graded buffers or superlattice buffers used for higher x. Pseudomorphic growth possible for x < 0.3–0.4 (no relaxation needed). Higher x requires similar relaxation techniques but can use cyclic annealing.
+Ge growth often needs thicker buffers; GeSi allows finer control of strain and composition in one step.
+### Manufacturing and Co-integration with EAM- **Ge PD**: Integrated via selective epitaxial growth in trenches after CMOS processing. Compatible with Si photonics platforms (Intel, GlobalFoundries, IMEC). Co-integration with Ge-based electro-absorption modulators (EAM) is straightforward on same wafer using shared Ge epitaxy steps. EAM uses Franz-Keldysh effect in Ge.- **GeSi PD**: Easier monolithic integration because SiGe can be grown in the same epi module as SiGe EAMs or modulators. Graded buffers improve crystal quality for both detector and modulator. Co-integration with Si EAM or SiGe EAM is simpler due to closer lattice match at moderate x. Reduces need for separate Ge-only growth steps.
+**Advantage for GeSi**: Better for full monolithic PICs where modulator and detector share material stack. Ge requires more careful buffer engineering to avoid defects affecting nearby EAMs.
+### Trade-offs- **Ge**: High absorption/responsivity vs. higher defect density, elevated dark current, and integration challenges (mismatch). Faster absorption but risk of leakage.- **GeSi**: Tunable bandgap/absorption edge vs. lower absorption per thickness. Better lattice matching reduces defects and dark current but may require thicker layers, impacting speed. Allows design flexibility (e.g., lower x for lower loss waveguides, higher x for detection).- General: Ge favors performance; GeSi favors manufacturability and yield in complex PICs. Strain engineering in GeSi can mitigate some trade-offs.
+### Advantages- **Ge PD**: Superior absorption and responsivity at 1310–1550 nm; mature high-speed results; simpler material for peak QE.- **GeSi PD**: Tunable properties; lower defect density at moderate x; easier co-integration with Si/SiGe modulators and waveguides; potentially better thermal stability.
+### Disadvantages- **Ge PD**: Lattice mismatch leads to defects and higher dark current (~nA–µA range); harder to scale thickness without cracking; more complex epitaxy buffers.- **GeSi PD**: Lower absorption unless high Ge content (which reintroduces mismatch issues); responsivity and speed can lag at low x; more complex composition control.
+### Current Market- **Ge PD**: Dominant in commercial silicon photonics (Intel’s 400G/800G transceivers, Broadcom, Cisco Acacia). Standard in data-center optical interconnects. Widely available on 200/300 mm SiPh platforms.- **GeSi PD**: Growing in research and some niche products (e.g., extended-reach or tunable detectors). Less common in high-volume market but increasing in monolithic EAM+PD modules where integration simplicity matters. Market still smaller than pure Ge; used where bandgap engineering provides system-level benefit.
+**Summary of overall trade-off**: Choose Ge PD for maximum responsivity and speed in simpler integrations. Choose GeSi PD when co-integration with EAMs, yield, or wavelength flexibility is critical, accepting potential reduction in absorption efficiency. Both benefit from waveguide coupling to boost effective absorption beyond vertical incidence limits.
+For specific device parameters (exact x, doping, area), performance varies with design and foundry process.
+
+
+
+
+
+
+
+
+
+
 Note 20260706:
 2. Please help to estimate the total testing time cost for imec SiPh components, make sure their estimated time is reasonable.
 
