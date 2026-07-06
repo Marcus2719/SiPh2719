@@ -39,9 +39,34 @@ For specific device parameters (exact x, doping, area), performance varies with 
 
 
 
+Your per‑wafer times (≈149 min** pigtail, ≈75 min parallel) are reasonable as a mid‑range estimate — measurement sweeps are fast, but alignment/calibration and active‑device electrical scans dominate time. Automated fiber‑array probing and single‑sided coupling are the fastest ways to cut the per‑wafer time in half or better. 
 
+Use automated fiber‑array (WAFT) or single‑sided array for multi‑IO passive devices — biggest single win. 
 
+Invest in automated blind‑search + Z‑sensing to cut per‑die re‑align to sub‑minute. 
 
+Minimize parameter set for wafer‑level screening (only IL, PDL, basic O‑E/E‑O) and reserve full electrical/RF scans for known good dies. 
+
+Parallelize electrical scans where possible (multiple SMUs/oscilloscopes) to avoid serial RF sweeps per die.
+Using 7 dies/wafer, ~149 min for a pigtail (serial) setup and ~75 min for a parallel (fiber‑array/WAFT) setup match typical lab‑to‑pilot throughput where alignment/calibration and active‑device electrical scans dominate the time budget while optical TLS/detector sweeps are relatively fast.
+
+Your per‑wafer estimates are reasonable.  
+They look reasonable as a rough estimate; however, I need additional details before I can comment further.
+
+Initial first‑die alignment & calibration	8–15 min	8–15 min
+Subsequent die re‑align / step & fine tune	2–6 min / die	0.5–2 min / die
+Optical sweep / TLS + detector measurement	0.5–3 min / die	0.5–2 min / die
+Electrical scans for active devices (RF, bias sweeps)	5–20 min / die	3–12 min / die
+Typical per‑die total (passive 1IN‑1OUT)	~5–25 min	~1–6 min
+Typical per‑die total (active transceiver)	~15–40 min	~6–20 min
+Why those numbers make sense
+Measurement sweeps are quick. A TLS sweep and detector readout for a single optical trace typically takes seconds to a few minutes depending on resolution and averaging.
+
+Alignment and calibration dominate. Initial fiber‑to‑chip alignment, Z‑height setting, power calibration, and probe‑head setup for the first die take the most time; subsequent dies are much faster if the probe station is automated and the process is repeatable.
+
+Active devices add time. Devices requiring electrical biasing, RF bandwidth scans, eye/BER testing, or voltage‑dependent optical sweeps require additional per‑die time compared with passive 1‑in/1‑out structures.
+
+Parallel probing halves or better. A well‑implemented fiber array or WAFT that couples multiple ports simultaneously removes much of the per‑die alignment overhead and reduces per‑wafer time roughly in line with your ~75 min estimate.
 
 
 
