@@ -2,6 +2,44 @@ Read this: [17] Design of a carrier-depletion Mach-Zehnder modulator in 250 nm S
 [20] Scaling capacity of fiber-optic transmission systems via silicon photonics
 [26] This is a report 先進封裝產業趨勢 (https://www.phys.nchu.edu.tw/upload/download_files/7edf3a61c42650743c5e53072f5e7e05.pdf)
 
+Note 20260706:
+2. Please help to estimate the total testing time cost for imec SiPh components, make sure their estimated time is reasonable.
+
+3. Do you have any Transmitter or Receiver PIC circuit layout? imec would not provide any circuit at the initial stage.
+
+4. What is the difference about the Ge THK for PD?
+
+5. Please compare their Flavor-1 and Flavor-2, trying to describe their pros and cons.
+
+
+1/ Device list: we are establishing the exact device list of what is in the PDK. As mentioned before, the models available are very limited for the time being. The devices that will be provided in the library in the form of fixed cells with reference performance parameters will be at least: Si MZM, Ge PD, GeSi EAM, Si grating couplers, SiN edge couplers, Si MMI, Si directional couplers, Si crossings, Si-to-SiN converters, Si-based thermo-optic phase shifter segment. The complete list will be provided shortly.
+ 
+2/ The OWAT throughput will strongly depend on the scribe-line test coverage required by the process capability. For a typical transceiver products, we test (1) grating coupler, (2) waveguide optical loss, (3) MZM electro-optical parameters, (4) Ge PD electro-optical parameters, (5) optical passives (optical directional couplers, optical direction splitters, transitions between waveguide type), (6) thermo-optic phase shifter. If you assume a 7-die/wafer coverage for each of these parameters, the total test time per wafer is about ~149min using a pigtail setup (1 fiber in, 1 fiber out). Using a parallel test setup (Fiber array or WAFT), the test time can be reduced to about half of that, ~75min. Once the process is mature and stable, we find that we can reduce the test coverage to 2 to 4 dies per wafer depending on the structure, and with parallel testing it can reduce the test time to 20-40min. These are high-level estimates, each customer may have specific requirements for PCM coverage.
+ 
+3/ WRT NRE activities, we confirm that (1) imec can support 2 full lot processing (at imec 2x23 wafers) with Ge epitaxy at imec and (2) imec will deliver 5 witness wafers fully fabricated at imec, using the full process for transceiver. We also confirm that we will support with optical testing at imec for 2x10 wafers with passive device patterning
+ 
+4/ CMP-free Ge is not included but we can consider this as an upgrade in the future. However, we are still developing it and we cannot provide you yet with a timeline. We have internal review planned in the coming weeks. We will keep you posted.
+ 
+5/ WRT imec circuit contribution, we cannot, at this point, include that for the TTTV. However we are discussing internally to have a circuit place in a follow-up tape-out by PSMC in the course of 2027.
+ 
+6/ With respect to your ask for workshops/training at imec and travel of imec expert support in TW requested, we are reviewing internally. For the workshop, we are reviewing when it can be organized. WRT expert travel to TW it is difficult to commit to this in a contract. In some cases, depending on the expertise and the moment of need, imec may or may not be able to accommodate. You can count on imec support but it may be that in some cases it will be more practical for your development engineer to come to Leuven.
+ 
+Note that my colleague in cc Vincent De Heyn, Epimitheas Georgitzikis  and myself are coordinating the definition of the statement of work until we appoint the program manager. 
+ 
+Finally, regarding the technology itself, I do not think that we have discussed in details the main flavors of the flow that we have. Please allow me to introduce you to the two flavors as follows:
+1/ Flavor #1: Si/SiN waveguide technology, Si modulators and 400nm Ge PD photodetectors. This is the main flavor used today for transceivers and CPO application.
+2/ Flavor #2: same as the above but the 400nm Ge is replaced by 300nm GeSi process that supports GeSi EAM and GeSi PD. This is a special flavor today that is pursued for more disruptive approaches to CPO architectures.
+ 
+There is a handful of modules that are different between the two flavors, in the Ge PD creation and the Middle-Of-Line modules above that. We will describe this in details in the workshop but I wanted to already bring this up to your attention as it will appear in the SoW. If you wish to develop the flavor #2, it will require to consider a silane line on your epi reactor for which we have recommendation for MFCs.
+
+
+
+
+
+
+
+
+
 
 
 Note this:
