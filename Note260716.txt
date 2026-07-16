@@ -1,5 +1,8 @@
 Draw this: [21] A Compact Butterfly-Style Silicon Photonic−Electronic Neural Chip for Hardware-Efficient Deep Learning
 Read this: [17] Design of a carrier-depletion Mach-Zehnder modulator in 250 nm SOI technology
+Download this: https://github.com/orgs/SiEPIC/repositories
+
+
 [20] Scaling capacity of fiber-optic transmission systems via silicon photonics
 [26] This is a report 先進封裝產業趨勢 (https://www.phys.nchu.edu.tw/upload/download_files/7edf3a61c42650743c5e53072f5e7e05.pdf)
 
