@@ -1,5 +1,5 @@
 Draw this: [21] A Compact Butterfly-Style Silicon Photonic−Electronic Neural Chip for Hardware-Efficient Deep Learning
-Read this: [17] Design of a carrier-depletion Mach-Zehnder modulator in 250 nm SOI technology
+Read this: [10] High-efficiency fiber-to-chip grating couplers realized using an advanced CMOS-compatible Silicon-On-Insulator platform
 Download this: https://github.com/orgs/SiEPIC/repositories
 https://www.sciencedirect.com/topics/engineering/bending-loss
 
