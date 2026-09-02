@@ -1,0 +1,13 @@
+https://www.keysight.com/used/my/en/knowledge/formulas/bandwith-formula
+
+
+
+relation between 3dB bandwidth and maximum modulation bit rate of SOI modulator
+
+
+
+
+
+
+
+
