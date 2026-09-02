@@ -1,7 +1,32 @@
 Draw this: [21] A Compact Butterfly-Style Silicon Photonic−Electronic Neural Chip for Hardware-Efficient Deep Learning
-Read this: [17] Design of a carrier-depletion Mach-Zehnder modulator in 250 nm SOI technology
+Read this: [10] High-efficiency fiber-to-chip grating couplers realized using an advanced CMOS-compatible Silicon-On-Insulator platform
 Download this: https://github.com/orgs/SiEPIC/repositories
 https://www.sciencedirect.com/topics/engineering/bending-loss
+QA temp:
+1. Could you please provide the laser specifications, such as the output power range (in mW or dBm), the spectral linewidth (in pm), and the wavelength range (in nm or um)?
+2. Could you specify the available fiber types (e.g., SMF-28, lensed fiber, fiber array,…) for the measurement? Is the setup configured for single-side or dual-side coupling?
+3. Is the stage temperature controlled? If yes, what is the temperature range?
+4. What is the minimum detectable power of the optical power meter, and what is the background noise level during the test?
+5. What is the system's capability for measuring electro-optical S-parameters?
+6. What is the dynamic range for measuring modulation efficiency and extinction ratios?
+7. Do the system support both NRZ and PAM-4 modulation formats?
+8. What primary technique do you utilize to measure polarization-dependent loss (PDL) in photonic chips, such as standard 4-state Mueller matrix analysis or the whole Poincaré sphere polarization scrambling?
+9. Are there any constraints regarding silicon photonic chip dimensions, grating coupler sizes, or the total count of input and output ports, the distance between each port?
+10. How many input and output ports on a single DUT can be tested simultaneously?
+11. Could you please provide an estimated testing time for the case below?
+ Testing count: 10 DUTs/wafer
+ Port count: 1 input and 1 output per DUT
+ Wavelength range: 1260 nm to 1360 nm
+ Channel spacing: 5 nm
+ Measurement items: Insertion loss and polarization-dependent loss (PDL)
+
+
+
+
+
+
+
+
 
 
 [20] Scaling capacity of fiber-optic transmission systems via silicon photonics
