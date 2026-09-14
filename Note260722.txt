@@ -1,3 +1,5 @@
+https://edu.tcfst.org.tw/edm/15S400/15S400.asp
+Download this:　Integrated Ring Resonators (2007)
 Draw this: [21] A Compact Butterfly-Style Silicon Photonic−Electronic Neural Chip for Hardware-Efficient Deep Learning
 Read this: [10] High-efficiency fiber-to-chip grating couplers realized using an advanced CMOS-compatible Silicon-On-Insulator platform
 Download this: https://github.com/orgs/SiEPIC/repositories
