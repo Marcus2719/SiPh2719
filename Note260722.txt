@@ -4,6 +4,42 @@ Draw this: [21] A Compact Butterfly-Style Silicon Photonic−Electronic Neural C
 Read this: [10] High-efficiency fiber-to-chip grating couplers realized using an advanced CMOS-compatible Silicon-On-Insulator platform
 Download this: https://github.com/orgs/SiEPIC/repositories
 https://www.sciencedirect.com/topics/engineering/bending-loss
+
+A. 冬瓜雞湯麵
+(冬瓜+土雞肉+蒜頭+麵條)
+
+B. 小米南瓜粥
+(小米+南瓜+豬軟骨+土雞蛋+薑黃粉+錫蘭肉桂粉)
+
+C.  小米芋頭排骨粥
+(小米+芋頭+豬排骨+土雞蛋)
+
+D. 苦瓜雞湯麵
+(冬瓜+土雞肉 +麵條)
+
+E. 番茄杏鮑菇(雞/豬)湯麵
+(番茄+洋蔥+杏鮑菇/洋菇+土雞/豬軟骨+麵條)
+
+F. 黑豆雞湯
+(黑豆+土雞+紅棗+枸杞)
+
+G. (快 - 清蒸) 鮭魚 + 青花菜 + 土雞蛋 + 燕麥吐司
+
+H. (快 - 清蒸) 虱目魚 + 秋葵/絲瓜 + 土雞蛋 + 燕麥吐司
+
+I. (甜品) 銀耳湯
+(白木耳+蓮子+紅棗+枸杞+椰糖)
+
+J. (甜品) 紅豆紫米
+(紅豆+蓮子+紫米+椰糖)
+
+ 
+保健食品:
+
+1/ 磷蝦油 (含EPA/DHA與蝦紅素)
+2/ 穀胱甘肽 (協助肝臟解毒與腎臟代謝) – 要加上多吃富含維生素C的水果(例如: 奇異果，櫻桃，芭樂等)
+3/ 小球藻 (補充礦物質+協助降低體內一些重金屬含量)
+
 QA temp:
 1. Could you please provide the laser specifications, such as the output power range (in mW or dBm), the spectral linewidth (in pm), and the wavelength range (in nm or um)?
 2. Could you specify the available fiber types (e.g., SMF-28, lensed fiber, fiber array,…) for the measurement? Is the setup configured for single-side or dual-side coupling?
