@@ -1,3 +1,39 @@
+Prober	Load Port,  Hexanano x 2, Shielding Enclosure, Probe card holder	FORMFACTOR CM300xi-SiPh
+	Positioner+Arm+Infinity Quad Probe	　
+	IR Camera for loss detection	Enli ProbeInsight™ – NightJar
+O/E Test Instrument	Tunable laser	N7776C
+	Electric Power meters	B2902C
+	Optical Power Meters	N7744C
+	Polarization synthesizer	N7786C
+	Optical Attenuator	N7764C
+	Optical  Switch	N7731C
+Test Controller	Software for wavelength Domain	N7700100C
+	Software for Automation (PathWave Test Automation Platform)	KS8400B
+O/E Test parts	Optical Spectrum Analyzer (OSA)	Anritsu/MS9740B
+	Amplified Spontaneous Emission (ASE) light source	FiberLabs Inc/ASE-FL7611
+	EDFA（Erbium-Doped Fiber Amplifier)	AMP-FL8612-OB-23
+	Lock-in amplifier	Zurich/UHFLI 600 MHz 
+Eye diagram	DCA-X (Digital Communication Analyzer)	N1093A
+	BERT (Bit Error Ratio Testers) (pattern generator)	M8050A
+S-parameter	Lightwave Component Analyzer	N4373E
+Simulation tool - Synopsys & Lumerical	Ansys Enterprise package - 2 licenses, 3 yrs	　
+	PIC layout - OptoCompiler Base - 1 licenses, 3yrs	　
+	Active device/PD - 2 licenses, 3 yrs	Synopsys Sentaurus Compound
+	Server (+2 GPU)	ThinkSystem SR680a V3 GPU + 2 H200
+Others	KEYSIGHT: Cable, BNC, LAN	　
+	Laser Viewing Cards	　
+	Fiber output power meter 	　
+
+
+
+
+
+
+
+
+
+
+
 Day 1 (Oct 10):  
 5:30 walk from home
 Take the train: XinZhuang to LiuJia
